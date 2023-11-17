@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function armstrong(number){
+            let numbers=number.toString();
+            let num=numbers.length;
+            let sum=numbers.split('').reduce((arms, digit)=>{
+                return arms + Math.pow(parseInt(digit, 10), num)
+            }, 0);
+            return sum===number;
+        }
+        let numb=153
+        if(armstrong(numb)){
+            document.write(numb + " is armstrong number")
+        }
+        else
+        {
+            document.write(numb+"is not armstrong number")
+        }
+        function callmethod(){
+            window.open("https://www.youtube.com/watch?v=dH7tWyfZWvQ");
+        }
+        function green(){
+            window.open("green")
+        }
+    </script>
+    <style>
+        .div{
+            display: grid;
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            grid-template-columns: 3 auto;
+            grid-column: 4/4;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+  <button onclick="callmethod()">MY Web page open</button>
+  <button onclick="green()">Green color show in the image</button>
+  <div class="div">change
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  <div class="green">green</div>
+  </div>
+</body>
+ 
+</body>
+
+</html>
